@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="formulario.css" media="screen">
+    <title>Cadastro</title>
+</head>
+
+<body>
+    <form>
+        <h1 style="text-align:center">Cadastro</h1>
+        <p style="text-align:center">Preenchar com seus dados</p>
+        
+        <fieldset>
+                      
+            <div class="campo">
+                <label for="nome"><strong>Nome</strong></label> 
+                <input type="text" placeholder="Seu nome aqui"name="nome" id="nome" required>
+            </div>
+
+            <div class="campo">
+                <label for="sobrenome"><strong>Sobrenome</strong></label> 
+                <input type="text" id="sobrenome" name="sobrenome" required>
+            </div> 
+
+            <div class="campo">
+                <label for="email"><strong>E-mail</strong></label>
+                <input type="email" id="email" name="email" required>
+            </div> 
+
+            <div>
+                <label><strong>Gênero</strong></label>
+                <label><br>
+                    <input type="radio" name="genero" value="feminino" checked>Feminino
+                </label> 
+                <label>
+                    <input type="radio" name="genero" value="masculino">Masculino
+                </label>
+                <label>
+                    <input type="radio" name="genero" value="helicoptero">Helicóptero
+                </label>
+            </div> <br>
+            
+            <div class="campo">
+                <label for="estado"><strong>Estado</strong></label>
+                <select id="estado">
+                    <option selected disabled value="">Selecione seu Estado</option>
+                    <option>Acre (AC)</option>
+                    <option>Alagoas (AL)</option>
+                    <option>Amapá (AP)</option>
+                    <option>Amazonas (AM)</option>
+                    <option>Bahia (BA)</option>
+                    <option>Ceará (CE)</option>
+                    <option>Distrito Federal (DF)</option>
+                    <option>Espírito Santo (ES)</option>
+                    <option>Goiás (GO)</option>
+                    <option>Maranhão (MA)</option>
+                    <option>Mato Grosso (MT)</option>
+                    <option>Mato Grosso do Sul (MS)</option>
+                    <option>Minas Gerais (MG)</option>
+                    <option>Pará (PA)</option>
+                    <option>Paraíba (PB)</option>
+                    <option>Paraná (PR)</option>
+                    <option>Pernambuco (PE)</option>
+                    <option>Piauí (PI)</option>
+                    <option>Rio de Janeiro (RJ)</option>
+                    <option>Rio Grande do Norte (RN)</option>
+                    <option>Rio Grande do Sul (RS)</option>
+                    <option>Rondônia (RO)</option>
+                    <option>Roraima (RR)</option>
+                    <option>Santa Catarina (SC)</option>
+                    <option>São Paulo (SP)</option>
+                    <option>Sergipe (SE)</option>
+                    <option>Tocantins (TO)</option>
+                </select>
+            </div>      
+        
+            <div id="check">
+                <label><strong>Selecione as tecnologias que você utiliza:</strong></label>
+                <br>
+                <input type="checkbox" id="tecnologia1" name="tecnologia1" value="HTML">
+                <label for-"tecnologia1">HTML</label>
+                <input type="checkbox" id="tecnologia2" name="tecnologia2" value="CSS">
+                <label for-"tecnologia2">CSS</label>
+                <input type="checkbox" id="tecnologia3" name="tecnologia3" value="Javascpript">
+                <label for-"tecnologia3">Javascpript</label>
+                <input type="checkbox" id="tecnologia4" name="tecnologia4" value="PHP">
+                <label for-"tecnologia4">PHP</label> <br>
+                <input type="checkbox" id="tecnologia5" name="tecnologia5" value="C#">
+                <label for-"tecnologia5">C#</label> 
+                <input type="checkbox" id="tecnologia6" name="tecnologia6" value="Python">
+                <label for-"tecnologia6">Python</label>
+                <input type="checkbox" id="tecnologia7" name="tecnologia7" value="Java">
+                <label for-"tecnologia7">Java</label>
+            </div>
+       
+            <div class="grupo">
+                <br>
+                <label><strong>Conte um pouco da sua experiência:</strong></label>
+                <textarea row="6" style="width:26em" id="experiencia" name="experiencia"></textarea>
+            </div> <br>
+            <button type="submit" class="botao"><strong>Enviar</strong></button> 
+        </fieldset>
+    </form>
+</body>
+</html>
